@@ -1,0 +1,165 @@
+/* button */
+.wrap_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  .btn {
+    flex: 1;
+    + .btn {
+      margin-left: 8px;
+    }
+  }
+}
+
+.wrap_btn_v {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .btn {
+    flex: 1;
+    + .btn {
+      margin-top: 12px;
+    }
+  }
+}
+
+.group_btn {
+  display: flex;
+  justify-content: flex-end;
+  &.align_left {
+    justify-content: flex-start;
+  }
+  .btn {
+    + .btn {
+      margin-left: 8px;
+    }
+  }
+}
+
+.area_btn {
+  display: flex;
+  .btn {
+    + .btn {
+      margin-left: 4px;
+    }
+  }
+}
+
+.item_btn {
+  display: flex;
+  .btn {
+    + .btn {
+      margin: 0;
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  + .btn {
+    margin-left: 8px;
+  }
+  .ico_comm {
+    margin-right: 2px;
+  }
+  .txt_sub {
+    color: $text-dark-dis;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.btn_xsmall {
+  min-width: 45px;
+  height: 28px;
+  min-height: 28px;
+  padding: 0 12px;
+  font-size: 12px;
+}
+
+.btn_small {
+  min-width: 72px;
+  height: 32px;
+  min-height: 32px;
+  padding: 0 16px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.btn_medium {
+  min-width: 88px;
+  height: 40px;
+  min-height: 40px;
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.btn_large {
+  min-width: 120px;
+  height: 48px;
+  min-height: 48px;
+  padding: 0 24px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn_primary {
+  background-color: $primary-default;
+  color: $text-light;
+  &:hover {
+    background-color: $primary-dark;
+  }
+  &:disabled {
+    background-color: $coolgray-300;
+  }
+}
+
+.btn_secondary {
+  background-color: $secondary-default;
+  color: $text-light;
+  &:hover {
+    background-color: $secondary-dark;
+  }
+  &:disabled {
+    background-color: $coolgray-300;
+  }
+}
+
+.btn_line {
+  background-color: transparent;
+  color: $primary-default;
+  border: 1px solid $primary-default;
+  &:hover {
+    background-color: $primary-pale;
+  }
+  &:disabled {
+    color: $coolgray-400;
+    border-color: $coolgray-300;
+  }
+}
+
+.btn_text {
+  background-color: transparent;
+  color: $text-dark;
+  &:hover {
+    background-color: $coolgray-100;
+  }
+  &:disabled {
+    color: $text-dark-dis;
+  }
+} 
