@@ -1,0 +1,60 @@
+{
+  "name": "interactive-chat-app",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "krungy",
+    "email": "furler711@gmail.com"
+  },
+  "engines": {
+    "node": ">=20.10.0",
+    "npm": "Please NPM to install dependencies"
+  },
+  "description": "Interactive Chat Application",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext ts,tsx --fix",
+    "prettier:fix": "prettier --write .",
+    "format:fix": "npm run prettier:fix && npm run lint:fix"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.1.1",
+    "zustand": "^5.0.2",
+    "immer": "^10.1.1",
+    "classnames": "^2.3.2",
+    "nanoid": "^5.0.7",
+    "date-fns": "^4.1.0",
+    "react-toastify": "^11.0.3",
+    "@stomp/stompjs": "^7.0.0",
+    "sockjs-client": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/sockjs-client": "^1.5.4",
+    "@types/stompjs": "^2.3.9",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^3.0.3",
+    "sass": "^1.89.0",
+    "typescript": "^5",
+    "vite": "^6.0.7"
+  },
+  "browserslist": [
+    "defaults",
+    "last 3 firefox version",
+    "last 20 chrome version"
+  ]
+}
