@@ -1,0 +1,39 @@
+.chat_stats {
+  padding: 20px;
+  background-color: $coolgray-0;
+  border-bottom: 1px solid $line-medium;
+
+  .stats_title {
+    font-size: 16px;
+    font-weight: 600;
+    color: $text-dark;
+    margin: 0 0 16px 0;
+  }
+
+  .stats_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+
+    .stat_item {
+      background-color: $coolgray-50;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+      border: 1px solid $line-subtitle;
+
+      .stat_value {
+        font-size: 24px;
+        font-weight: 700;
+        color: $primary-default;
+        margin-bottom: 4px;
+      }
+
+      .stat_label {
+        font-size: 11px;
+        color: $text-dark-2nd;
+        font-weight: 500;
+      }
+    }
+  }
+} 

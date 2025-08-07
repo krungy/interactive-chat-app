@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import ChatStats from '@/components/interactive/ChatStats';
+import useChatStore from '@/store/chatStore';
 import Button from '@/components/common/button/Button';
 import './ChatDashboard.scss';
 
 const ChatDashboard: React.FC = () => {
+  const { 
+    stats,
+  } = useChatStore(state => state);
+
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -50,7 +56,7 @@ const ChatDashboard: React.FC = () => {
 
       <div className="chat_dashboard_content">
         <div className="chat_dashboard_sidebar">
-          sidebar
+          <ChatStats stats={stats} />
         </div>
 
         <div className="chat_dashboard_main">
